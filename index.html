@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <title>Header Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="backgroundModal"></div>
+<header>
+    <div class="logo">
+        <img src="./imgs/Logo.png" alt="Logo">
+    </div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#"><h5>Pricing</h5></a></li>
+            <li><a href="#"><h5>Use Cases</h5></a></li>
+            <li><a href="#"><h5>Book a Demo</h5></a></li>
+        </ul>
+    </nav>
+    <div class="actions">
+        <button class="sign-in">Sign In</button>
+        <button class="contact-sales">Contact Sales</button>
+    </div>
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+
+    <div class="line"></div>
+
+
+</header>
+<div class="burger-menu">
+    <div class="logo">
+        <img src="./imgs/Logo.png" alt="Logo">
+    </div>
+    <nav>
+        <ul class="nav-links-menu">
+            <li><a href="#"><h5>Pricing</h5></a></li>
+            <li><a href="#"><h5>Use Cases</h5></a></li>
+            <li><a href="#"><h5>Book a Demo</h5></a></li>
+        </ul>
+    </nav>
+    <div class="actions-menu">
+        <button class="sign-in">Sign In</button>
+        <button class="contact-sales">Contact Sales</button>
+    </div>
+</div>
+<section class="content">
+    <div class="text">
+        <h1>How to do a Website Audit to Improve SEO & Conversions</h1>
+        <p class="info">Usability auditing with the Plerdy tool is a comprehensive expert assessment of your website
+            based on a profound study of user behavior registered on it. Plerdy will provide you with crucial data based
+            on which you will be able to run an efficient usability audit of your website, identify and fix SEO issues,
+            and subsequently lead it to higher positions in search.</p>
+        <p class="note">Thus, you'll compile a list of flaws in your website interface, navigation, and conversion path
+            that can eventually affect its micro and macro conversion rates.</p>
+        <button class="openModal">Run the Plerdy tool</button>
+        <h5>Trusted by some of the world's largest enterprises</h5>
+        <div class="company">
+            <img src="./imgs/softserve.svg" alt="softserve">
+            <img src="./imgs/subatu.svg" alt="subatu">
+            <img src='./imgs/anextour.svg' alt="anextour">
+            <img src='./imgs/prom.svg' alt="prom">
+            <img src='./imgs/ukrposhta.svg' alt="ukrposhta">
+        </div>
+    </div>
+    <div class="img-group">
+        <img src="./imgs/linkedin-sales-solutions-wS73LE0GnKs-unsplash%201.png" alt="general" class="general">
+        <img src="./imgs/chartOne.svg" class="chartOne" alt="chart">
+        <img src="./imgs/chartTwo.svg" class="chartTwo" alt="chart">
+        <img src="./imgs/chartThree.svg" class="chartThree" alt="chart">
+
+
+    </div>
+    <div class="modal">
+        <div>
+            <img src='./imgs/pexels-pixabay-264985%201.png' alt="pexels pixabay">
+        </div>
+        <div class="form">
+            <button class="close">
+                <img src='./imgs/close.svg'>
+            </button>
+            <h2>How to do a Website Audit to Improve SEO & Conversions</h2>
+            <p>You will get an SMS with a link to the webinar</p>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="firstName">Name</label>
+                    <input type="text"
+                           class="form-control"
+                           id="firstName"
+                           name="Name"
+                           minlength="3"
+                           required
+                           placeholder="Boris Johnson">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <div class="select-input">
+                        <select id="select" name="select" id="countries">
+                            <option value="UA" selected>🇺🇦+380</option>
+                            <option value="US">🇺🇸+1</option>
+                            <option value="UH">🇬🇧+44</option>
+                            <option value="AU">🇦🇺+61</option>
+                        </select>
+                        <input type="tel" class="form-control" id="phone" name="phone" minlength="3" required
+                               placeholder="XX XXX XXXX">
+                    </div>
+                </div>
+                <div class="button">
+                    <button class="one">Support</button>
+                    <button class="two">Contact sales</button>
+                </div>
+                <label class="checkbox">
+                    <input  name="privacy" type="checkbox" />
+                    <p>By sending up? you agree to our <span>Conditions</span> and <span>Privacy Policy</span></p>
+                </label>
+                <div class="form-logo">
+                    <img src="./imgs/Frame%2028.svg">
+                    <span><p>Powered by <a href="/">Plerdy</a></p></span>
+                </div>
+            </form>
+
+
+        </div>
+
+    </div>
+</section>
+<section class="container-swiper">
+    <h3><span>6 Reasons</span> to Use Plerdy Data for a Website Usability Audit</h3>
+    <div class="swiper-next">
+        <img src='./imgs/arrow.svg'>
+    </div>
+    <div class="swiper-prev">
+        <img src='./imgs/arrow.svg'>
+    </div>
+
+</section>
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <h3>You will benefit from our SaaS marketing product</h3>
+            <p>Our team has developed a powerful tool to audit website content – a heatmap that features more than 100
+                reports for e-marketers and business owners.</p>
+            <span class="number"><p>1</p>
+            </span>
+        </div>
+        <div class="swiper-slide">
+            <h3>We have 10+ years of experience in digital marketing</h3>
+            <p>The Plerdy team has rich experience in auditing, analyzing, and improving eCommerce websites to boost
+                their conversion rates. So we are well aware of all the weak spots of eCommerce websites and know what
+                data you need to run a usability audit of your website.</p>
+            <span class="number"><p>2</p>
+            </span>
+        </div>
+        <div class="swiper-slide">
+            <h3>We enable generating hypotheses about what leads to low website conversions</h3>
+            <p>Thanks to the data gathered with the Plerdy heatmap about your website visitors’ behavior, you can
+                generate hypotheses that potentially explain which functional flaws and problems are causing a low
+                conversion on your website and how.</p>
+            <span class="number"><p>3</p>
+            </span>
+        </div>
+        <div class="swiper-slide">
+            <h3>The analysis of the dynamic elements of the website</h3>
+            <p>Some services disregard such an important aspect as the clickability analysis of the dynamic elements
+                when UX auditing, including drop-down menu, pop-up, and slider. However, thanks to the unique Plerdy
+                auditing functionality, you will receive this information.</p>
+            <span class="number"><p>4</p>
+            </span>
+        </div>
+        <div class="swiper-slide">
+            <h3>The analysis of both the desktop and mobile versions of the website</h3>
+            <p>In some areas, websites generate more than 60% of the traffic from their mobile versions, so it would be
+                unwise not to audit the behavior of mobile users. With the Plerdy heatmap, you can run a UX auditing
+                analysis separately for the desktop and mobile versions of your website.</p>
+            <span class="number"><p>5</p>
+            </span>
+        </div>
+        <div class="swiper-slide">
+            <h3>Audit data analysis with Google Analytics</h3>
+            <p>In addition to the Plerdy heatmap data, you also get the audit data from Google Analytics. Thus, you can
+                analyze the sources of traffic and its quality to be able to pinpoint any problems. For example, fixing
+                usability bugs alone will not improve conversion if the website gets mistargeted traffic.</p>
+            <span class="number"><p>6</p>
+            </span>
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+<div class="container-boost">
+    <button class="boost-button">
+        Boost my website conversion
+    </button>
+    <p>So, it’s high time for you to stop losing 99% of potential clients due to being unaware of your website users’
+        behavior patterns and needs.</p>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>
