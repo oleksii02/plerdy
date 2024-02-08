@@ -32,6 +32,9 @@ backgroundModal.addEventListener('click', () => {
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('contactForm');
     const phoneInput = document.getElementById('phone');
+    const invalidPhone = document.querySelector('.invalid-phone');
+    const invalidCheckbox = document.querySelector('.invalid-checkbox');
+
 
     form.addEventListener('submit', function(event) {
         event.preventDefault(); // Зупиняємо стандартну дію надсилання форми
@@ -39,14 +42,16 @@ document.addEventListener('DOMContentLoaded', function() {
         // Валідація телефонного номера за допомогою регулярного виразу
         const phoneRegex = /^[0-9]{2}[0-9]{3}[0-9]{4}$/; // Приклад: "671592925"
         if (!phoneRegex.test(phoneInput.value)) {
-            alert('Please enter a valid phone number (XX XXX XXXX)');
+            // alert('Please enter a valid phone number (XX XXX XXXX)');
+            invalidPhone.classList.toggle('open')
             return;
         }
 
         // Перевірка, чи вибрано погодження з умовами
         const privacyCheckbox = document.querySelector('input[name="privacy"]');
         if (!privacyCheckbox.checked) {
-            alert('Please agree to the terms and conditions');
+            //alert('Please agree to the terms and conditions');
+            invalidCheckbox.classList.toggle('open')
             return;
         }
         const name = document.getElementById('firstName').value;

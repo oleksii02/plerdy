@@ -278,7 +278,7 @@ nav ul li a h5 {
 .modal {
     display: none;
     width: 800px;
-    height: 550px;
+    height: 570px;
     background-color: var(--white-main);
     border-radius: 15px;
     position: fixed;
@@ -370,6 +370,27 @@ button.close:hover {
     letter-spacing: .0025em;
     color: var(--gray-two);
 }
+.invalid-phone{
+    display: none;
+}
+.invalid-checkbox{
+    display: none;
+}
+ .invalid-phone, .invalid-checkbox{
+     color: red !important;
+     text-align: end;
+     font-family: "Roboto", sans-serif;
+     font-weight: 600;
+     font-size: 12px;
+     line-height: 150%;
+     letter-spacing: .0025em;
+}
+.invalid-phone.open{
+    display: block;
+}
+.invalid-checkbox.open{
+    display: block;
+}
 
 .form-group input {
     padding: 6px 8px;
@@ -434,7 +455,7 @@ button.close:hover {
 }
 
 .form .button {
-    margin: 0 auto 24px;
+    margin: 0 auto 4px;
     display: flex;
     width: 316px;
     justify-content: space-between;
